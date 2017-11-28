@@ -15,3 +15,19 @@ Documentation to successfully setup Minikube for local development
 * From a terminal window run: ```pip install -r requirements.txt```   
 * From a terminal window run: ```python3 bootstrap.py -f minikube-inputs.yaml```   
      - Feel free to edit the ```minikube-inputs.yaml``` file to meet your local environment's needs
+
+### Supported YAML inputs ###
+* cpu parameter - number of vCPUs
+* memory parameter - amount of RAM in MBs
+* action - either 'start' or 'stop'
+* delete_instance - boolean
+* debug - boolean
+
+### Example minikube-inputs.yaml ###
+```---
+cpu: 4
+memory: 8196
+action: start
+delete_instance: True
+debug: False
+``` 
