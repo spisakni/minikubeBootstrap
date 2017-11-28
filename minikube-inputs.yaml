@@ -1,0 +1,6 @@
+---
+cpu: 4
+memory: 8196
+action: start
+delete_instance: True
+debug: False
